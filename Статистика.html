@@ -1,0 +1,312 @@
+<html>
+<body text ="#800000" bgcolor ="#eeeeee">
+<form>
+<h2 align = "left"> ВОЕННO<br> ИСТОРИЧЕСКИЙ <br>РЕСУРС</h2>
+
+<hr color="#800000" size=1>
+
+<p align = "center">
+ <a href="ГлавнаяСтраница.html" link="#800000" alink="#800000" vlink="#800000"> Главная страница </a>
+ <a href="Статистика.html" link="#800000" alink="#800000" vlink="#800000"> Раздел статистики </a>
+ <a href="Галерея.html" link="#800000" alink="#800000" vlink="#800000"> Галерея </a>
+</p>
+
+<hr color="#800000" size=1>
+
+<p>
+<details>
+	<summary>Сортировка</summary>
+	<p>
+		Первый уровень:
+		<select name="sorting1">
+		<option value="0" selected> Нет </option>
+		<option value="1"> Год начала </option>
+		<option value="2"> Год конца </option>
+		<option value="3"> Первая сторона конфликта </option>
+		<option value="4"> Вторая сторона конфликта </option>
+		<option value="5"> Потери первой стороны в тыс. </option>
+		<option value="6"> Потери второй стороны в тыс. </option>
+		<option value="7"> Мирный договор</option>
+		</select>
+		по убыванию?
+		<input type="checkbox" name="sortoption1" value="0">
+	</p>
+	<p>
+		Второй уровень:
+		<select name="sorting1">
+		<option value="0" selected> Нет </option>
+		<option value="1"> Год начала </option>
+		<option value="2"> Год конца </option>
+		<option value="3"> Первая сторона конфликта </option>
+		<option value="4"> Вторая сторона конфликта </option>
+		<option value="5"> Потери первой стороны в тыс. </option>
+		<option value="6"> Потери второй стороны в тыс. </option>
+		<option value="7"> Мирный договор</option>
+		</select>
+		по убыванию?
+		<input type="checkbox" name="sortoption1" value="0">
+	</p>
+	<p>
+		Третий уровень:
+		<select name="sorting1">
+		<option value="0" selected> Нет </option>
+		<option value="1"> Год начала </option>
+		<option value="2"> Год конца </option>
+		<option value="3"> Первая сторона конфликта </option>
+		<option value="4"> Вторая сторона конфликта </option>
+		<option value="5"> Потери первой стороны в тыс. </option>
+		<option value="6"> Потери второй стороны в тыс. </option>
+		<option value="7"> Мирный договор</option>
+		</select>
+		по убыванию?
+		<input type="checkbox" name="sortoption1" value="0">
+	</p>
+</details>
+
+<details>
+	<summary>Фильтр</summary>
+	<p>
+		Наименование: <input type="text" name="warname" id="warname"> <br><br>
+		Год начала: <input type="number" name="yearbegin" id="yearbegin" min="1" max="2022"> <br><br>
+		Год конца: <input type="number" name="yearend" id="yearend" min="1" max="2022"><br><br>
+		Первая сторона конфликта: <input type="text" name="firstside" id="firstside"><br><br>
+		Вторая сторона конфликта: <input type="text" name="secondside" id="secondside"><br><br>
+		Потери первой стороны в тыс.: <input type="number" name="lossesfrom1" id="lossesfrom1" min="0"> от до <input type="number" name="lossesto1" id="lossesto2" min="0"><br><br>
+		Потери первой стороны в тыс.: <input type="number" name="lossesfrom2" id="lossesfrom2" min="0"> от до <input type="number" name="lossesto1" id="lossesto2" min="0">
+	</p>
+</details>
+
+<details>
+	<summary>График</summary>
+	<p>
+	<b>Значение по оси ОХ:</b><br>
+	<input type="radio" name="OXvalue"> Страна<br>
+	<input type="radio" name="OXvalue"> Наименование войны<br>
+	</p>
+	
+	<p>
+	<b>Результат:</b><br>
+	<input type="checkbox" name="result1" value="0">Максимальные потери<br>
+	<input type="checkbox" name="result2" value="1">Минимальные потери<br>
+	<input type="checkbox" name="result2" value="2">Продолжительность боевых действий<br>
+	</p>
+</details>
+</p>
+
+<table align="center" border="1" cellpadding="5" cellspacing="0" bordercolor="#800000">
+
+<tr>
+	<th>Наименование</th>
+	<th>Год начала</th>
+	<th>Год конца</th>
+	<th>Первая сторона конфликта</th>
+	<th>Вторая сторона конфликта</th>
+	<th>Потери первой стороны в тыс.</th>
+	<th>Потери второй стороны в тыс.</th>
+	<th>Мирный договор</th>
+</tr>
+
+<tr>
+	<td>Столетняя война</td>
+	<td>1337</td>
+	<td>1453</td>
+	<td>Англия</td>
+	<td>Франция</td>
+	<td>60</td>
+	<td>40</td>
+	<td>Аррасский договор</td>
+</tr>
+
+<tr>
+	<td>Русско-японская война</td>
+	<td>1904</td>
+	<td>1905</td>
+	<td>Российская Империя</td>
+	<td>Японская Империя</td>
+	<td>55</td>
+	<td>55</td>
+	<td>Портсмутский мирный договор</td>
+</tr>
+
+<tr>
+	<td>Отечественная война</td>
+	<td>1812</td>
+	<td>1812</td>
+	<td>Российская Империя</td>
+	<td>Французская Империя</td>
+	<td>240</td>
+	<td>260</td>
+	<td>-</td>
+</tr>
+
+<tr>
+	<td>Русско-польская война</td>
+	<td>1654</td>
+	<td>1667</td>
+	<td>Русское царство</td>
+	<td>Речь Посполитая</td>
+	<td>80</td>
+	<td>120</td>
+	<td>Андрусовское перемирие</td>
+</tr>
+	
+<tr>
+	<td>Северная война</td>
+	<td>1700</td>
+	<td>1721</td>
+	<td>Русское царство</td>
+	<td>Королевство Швеция</td>
+	<td>110</td>
+	<td>140</td>
+	<td>Ништадтский мир</td>
+</tr>
+
+<tr>
+	<td>Англо-занзибарская война</td>
+	<td>1896</td>
+	<td>1896</td>
+	<td>Британская война</td>
+	<td>Султанат Занзибар</td>
+	<td>250</td>
+	<td>0.5</td>
+	<td>-</td>
+</tr>
+	
+<tr>
+	<td>Гражданская война в Нигерии</td>
+	<td>1967</td>
+	<td>1970</td>
+	<td>Биафра</td>
+	<td>Нигерия</td>
+	<td>1000</td>
+	<td>200</td>
+	<td>-</td>
+</tr>
+	
+<tr>
+	<td>Семилетняя война</td>
+	<td>1756</td>
+	<td>1763</td>
+	<td>Королевство Пруссия</td>
+	<td>Российская Империя</td>
+	<td>400</td>
+	<td>138</td>
+	<td>Петербургский мирный договор</td>
+</tr>
+	
+<tr>
+	<td>Русско-персидская</td>
+	<td>1804</td>
+	<td>1813</td>
+	<td>Российская Империя</td>
+	<td>Персия</td>
+	<td>92</td>
+	<td>101</td>
+	<td>Гюлестанский мир</td>
+</tr>
+	
+<tr>
+	<td>Русско-турецкая война</td>
+	<td>1787</td>
+	<td>1791</td>
+	<td>Российская Империя</td>
+	<td>Османская Империя</td>
+	<td>55</td>
+	<td>120</td>
+	<td>Ясский мирный договор</td>
+</tr>
+	
+<tr>
+	<td>Вторая Итало-эфиопская война</td>
+	<td>1935</td>
+	<td>1936</td>
+	<td>Италия</td>
+	<td>Эфиопская Империя</td>
+	<td>10</td>
+	<td>275</td>
+	<td>-</td>
+</tr>
+	
+<tr>
+	<td>Австро-итальянская война</td>
+	<td>1848</td>
+	<td>1849</td>
+	<td>Италия</td>
+	<td>Австрийская Империя</td>
+	<td>0.9</td>
+	<td>2</td>
+	<td>Миланский мирный договор</td>
+</tr>
+	
+<tr>
+	<td>Ирано-иракская война</td>
+	<td>1980</td>
+	<td>1988</td>
+	<td>Ирак</td>
+	<td>Иран</td>
+	<td>180</td>
+	<td>500</td>
+	<td>-</td>
+</tr>
+	
+<tr>
+	<td>Советско-польская война</td>
+	<td>1919</td>
+	<td>1921</td>
+	<td>РСФСР</td>
+	<td>Польская республика</td>
+	<td>70</td>
+	<td>47</td>
+	<td>Рижский мирный договор</td>
+</tr>
+
+<tr>
+	<td>Советско-финляндская война</td>
+	<td>1939</td>
+	<td>1940</td>
+	<td>СССР</td>
+	<td>Финляндия</td>
+	<td>126</td>
+	<td>25</td>
+	<td>Московский мирный договор</td>
+</tr>
+	
+<tr>
+	<td>Карабахская война</td>
+	<td>1992</td>
+	<td>1994</td>
+	<td>НКР</td>
+	<td>Азербайджан</td>
+	<td>5.8</td>
+	<td>11.5</td>
+	<td>Соглашение о прекращении огня</td>
+</tr>
+	
+<tr>
+	<td>Футбольная война</td>
+	<td>1969</td>
+	<td>1969</td>
+	<td>Сальвадор</td>
+	<td>Гондурас</td>
+	<td>0.7</td>
+	<td>1.2</td>
+	<td>Соглашение о прекращении огня</td>
+</tr>
+	
+<tr>
+	<td>Операция «Союзная сила»</td>
+	<td>1999</td>
+	<td>1999</td>
+	<td>НАТО</td>
+	<td>Югославия</td>
+	<td>0.002</td>
+	<td>0.2</td>
+	<td>Кумановское соглашение</td>
+</tr>	
+
+</table>
+
+</form>
+</body>
+
+</html>
